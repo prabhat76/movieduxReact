@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from "react";
+import React from "react";
 import '../styles.css'
 
 export default function MovieCard({movie}) {
@@ -19,7 +19,7 @@ export default function MovieCard({movie}) {
         }   
     };
 
-    
+
    return (
     <div key={movie.id} className="movie-card">
             <img src={`images/${movie.image}`} alt={movie.title} onError={handleErrors}
